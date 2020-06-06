@@ -15,6 +15,9 @@ class Waiter
   end 
   
   def meals
-  end 
+    Meal.all.select do |meal|
+     meal.waiter == self #checking for waiter now
+    end
+  end
   
 end

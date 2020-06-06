@@ -1,6 +1,6 @@
 class Customer
   
-  attr_accessor :name, :age, :total
+  attr_accessor :name, :age, :total, :meal, :tip
   
   def initialize(name, age)
     @name = name
